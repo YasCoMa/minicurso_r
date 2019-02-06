@@ -1,0 +1,11 @@
+1. Atribuam seu nome a uma variável chamada 'nome';
+2. // sua idade a uma variável chamda 'idade';
+3. // sua altura a uma variável chamada 'altura';
+4. Construam um vetor com estas informações, salvar na variavel 'eu' e verificar o tipo dos elementos
+5. Acessar o valor de idade
+6. Acessar somente nome e idade
+7. Tentem somar idade+10
+8. Agora construa um vetor com os mesmos dados (porém com a idade + 10) e atribua a variavel 'eu_do_futuro'
+9. Subraia a idade armazenada em 'eu_do_futuro' da idade em 'eu' e descubra quantos anos se passaram;
+10. Construa uma matriz com suas informações (primeira linha) e com informações de um amigo(a) na segunda linha
+

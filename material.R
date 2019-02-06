@@ -1,6 +1,7 @@
 # Minicurso R/RStudio
 # --> Escolhendo diretório de trabalho
 setwd("~/OneDrive/minicurso_r/")
+getwd()
 
 # ---> Instalação do R/Rstudio no ubuntu 18.04
     # --> Instalando R
@@ -31,22 +32,41 @@ library(limma)
 
 # --> Variáveis
 nome <- "João"
+nome = "João"
 class(nome)
 
 idade <- 23
+typeof(idade)
 class(idade)
 salario <- 4000.50
 class(salario)
+typeof(salario)
 
 print(nome)
 nome
 
 letras <- c("a","b","c","d")
-letras[1]
-l <- as.array(letras)
-l[1:3]
+letras
+as.numeric(letras[5])*2
+class(letras)
+
+l <- as.array(letras, 4, list(c("a","b"), c("x","y")))
+l
+head(l)
+class(l)
+l[-1]
+
+print("meu nome é "+str(12))
+print(paste("meu nome é ", nome, sep="-"))
 
 aux = matrix(c(1,2,1,0, 3,3,6,1, 10,10,14,9, 6,7,12,11), 4, 4)
+aux[2,1:3]
+
+
+class(aux)
+rownames(aux) <- c("a","b","c","d")
+colnames(aux) <- c("c1","c2","c3","c4")
+aux
 
 # --> Operações
 idade+1
@@ -64,6 +84,7 @@ if(idade>18){
   print("Menor")
 }
 
+matrix
 i=1
 while (i <= 10) {
   print(paste("number ",i, sep=" "))
@@ -154,7 +175,7 @@ plot(dados$origin[1:100], dados$weight[1:100], pch=1, lwd=2,
 # ---> Exemplos dde testes estatísticos
 #Teste t para média populacional 
 amostra = c(14.9,13.4,14.5,13.5,15.0,13.9,14.9,16.4,14.6,15.4)
-t.test(amostra,mu=15) 
+t.test(amostra,mu=25) 
 
 #Correlação de Pearson
 #install.packages("nortest")
